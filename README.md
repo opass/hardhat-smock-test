@@ -1,13 +1,12 @@
 # Sample Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project demonstrates smock is not compatable with waffle. 
 
-Try running some of the following tasks:
+First, running test
 
 ```shell
-npx hardhat help
-npx hardhat test
-GAS_REPORT=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+npm install
+npm run test
 ```
+
+Then Uncomment the line in `test/TestStdReference.ts` and run test again. The test will fail.
